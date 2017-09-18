@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26730.10
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fiver.Asp.Docker.Vs", "Fiver.Asp.Docker.Vs\Fiver.Asp.Docker.Vs.csproj", "{ECB417F3-8B98-43C0-BD66-8F49689D2755}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fiver.Asp.Docker.Data", "Fiver.Asp.Docker.Data\Fiver.Asp.Docker.Data.csproj", "{F71E2CE5-D4D4-42EE-8CEA-14352D835CD9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fiver.Asp.Docker.Api", "Fiver.Asp.Docker.Api\Fiver.Asp.Docker.Api.csproj", "{C5728864-71BD-4EBE-9EAE-554F65FF08BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fiver.Asp.Docker.Web", "Fiver.Asp.Docker.Web\Fiver.Asp.Docker.Web.csproj", "{00D9A25C-9B96-4E6C-A7A0-D5A48992EDD8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +15,18 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{ECB417F3-8B98-43C0-BD66-8F49689D2755}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{ECB417F3-8B98-43C0-BD66-8F49689D2755}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{ECB417F3-8B98-43C0-BD66-8F49689D2755}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{ECB417F3-8B98-43C0-BD66-8F49689D2755}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F71E2CE5-D4D4-42EE-8CEA-14352D835CD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F71E2CE5-D4D4-42EE-8CEA-14352D835CD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F71E2CE5-D4D4-42EE-8CEA-14352D835CD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F71E2CE5-D4D4-42EE-8CEA-14352D835CD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5728864-71BD-4EBE-9EAE-554F65FF08BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5728864-71BD-4EBE-9EAE-554F65FF08BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5728864-71BD-4EBE-9EAE-554F65FF08BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5728864-71BD-4EBE-9EAE-554F65FF08BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00D9A25C-9B96-4E6C-A7A0-D5A48992EDD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00D9A25C-9B96-4E6C-A7A0-D5A48992EDD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00D9A25C-9B96-4E6C-A7A0-D5A48992EDD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00D9A25C-9B96-4E6C-A7A0-D5A48992EDD8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
