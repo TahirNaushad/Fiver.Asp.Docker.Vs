@@ -1,0 +1,18 @@
+﻿@page "{id:int}"
+@model DeleteModel
+@{
+}
+
+<h2>Delete Movie</h2>
+
+<p>Are you sure you want to delete <strong>@Model.Title</strong>?</p>
+
+<form method="post">
+    <input type="hidden" asp-for="Id" />
+
+    <button type="submit">Yes</button>
+    <a asp-page="./Index">No</a>
+</form>
+
+<a asp-page="./Edit" asp-route-id="@Model.Id">Edit</a>
+<a asp-page="../Index">Home</a>

@@ -1,0 +1,25 @@
+﻿@page "{id:int}"
+@model EditModel
+@{
+}
+
+<h2>Edit Movie - @Model.Movie.Title</h2>
+
+<form method="post">
+    <div asp-validation-summary="All"></div>
+
+    <input type="hidden" asp-for="Movie.Id" />
+
+    <label asp-for="Movie.Title"></label>
+    <input asp-for="Movie.Title" />
+    <span asp-validation-for="Movie.Title"></span><br />
+
+    <label asp-for="Movie.ReleaseYear"></label>
+    <input asp-for="Movie.ReleaseYear" /><br />
+
+    <label asp-for="Movie.Summary"></label>
+    <textarea asp-for="Movie.Summary"></textarea><br />
+
+    <button type="submit">Save</button>
+    <a asp-page="./Index">Cancel</a>
+</form>

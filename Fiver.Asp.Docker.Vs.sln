@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26730.10
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fiver.Asp.Docker.Data", "Fiver.Asp.Docker.Data\Fiver.Asp.Docker.Data.csproj", "{F71E2CE5-D4D4-42EE-8CEA-14352D835CD9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fiver.Asp.Docker.Data", "Fiver.Asp.Docker.Data\Fiver.Asp.Docker.Data.csproj", "{F71E2CE5-D4D4-42EE-8CEA-14352D835CD9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fiver.Asp.Docker.Api", "Fiver.Asp.Docker.Api\Fiver.Asp.Docker.Api.csproj", "{C5728864-71BD-4EBE-9EAE-554F65FF08BC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fiver.Asp.Docker.Api", "Fiver.Asp.Docker.Api\Fiver.Asp.Docker.Api.csproj", "{C5728864-71BD-4EBE-9EAE-554F65FF08BC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fiver.Asp.Docker.Web", "Fiver.Asp.Docker.Web\Fiver.Asp.Docker.Web.csproj", "{00D9A25C-9B96-4E6C-A7A0-D5A48992EDD8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fiver.Asp.Docker.Web", "Fiver.Asp.Docker.Web\Fiver.Asp.Docker.Web.csproj", "{00D9A25C-9B96-4E6C-A7A0-D5A48992EDD8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
