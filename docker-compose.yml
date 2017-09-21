@@ -1,0 +1,17 @@
+﻿version: '3.3'
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile_api
+    image: fiver.asp.docker.api
+    ports:
+      - "8080:80"
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile_web
+    image: fiver.asp.docker.web
+    ports:
+      - "8090:80"

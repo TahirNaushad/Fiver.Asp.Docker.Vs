@@ -9,6 +9,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fiver.Asp.Docker.Api", "Fiv
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fiver.Asp.Docker.Web", "Fiver.Asp.Docker.Web\Fiver.Asp.Docker.Web.csproj", "{00D9A25C-9B96-4E6C-A7A0-D5A48992EDD8}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docker", "docker", "{C61B8803-AEC3-47EB-B485-A6ACA61B54FE}"
+	ProjectSection(SolutionItems) = preProject
+		.dockerignore = .dockerignore
+		docker-compose.yml = docker-compose.yml
+		Dockerfile_api = Dockerfile_api
+		Dockerfile_web = Dockerfile_web
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
