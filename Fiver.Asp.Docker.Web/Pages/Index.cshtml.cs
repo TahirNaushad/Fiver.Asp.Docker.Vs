@@ -8,7 +8,7 @@ namespace Fiver.Asp.Docker.Web.Pages
 
         public void OnGet()
         {
-            this.Message = "ASP.NET Core, Razor Pages, Docker & Azure";    
+            this.Message = "ASP.NET Core, Razor Pages, Docker & Azure...";    
         }
     }
 }
