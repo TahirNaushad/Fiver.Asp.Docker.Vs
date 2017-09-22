@@ -8,6 +8,7 @@ RUN dotnet publish ./Fiver.Asp.Docker.Api/ -o /publish --configuration Release
 
 # Publish Stage
 FROM microsoft/aspnetcore
+ENV ConnectionStrings:DefaultConnection=
 WORKDIR /app
 COPY --from=build-env /publish .
 ENTRYPOINT ["dotnet", "Fiver.Asp.Docker.Api.dll"]
