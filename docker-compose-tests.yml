@@ -8,6 +8,9 @@ services:
     environment:
       - "ConnectionStrings:DefaultConnection=Server=tcp:fiver.database.windows.net,1433;Initial Catalog=movies;Persist Security Info=False;User ID=${USER_ID};Password=${PASSWORD};MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
   tests:
+    build:
+      context: .
+      dockerfile: Dockerfile_tests
     image: fiver.asp.docker.tests
     environment:
       - "Api_Url=http://api/movies"
