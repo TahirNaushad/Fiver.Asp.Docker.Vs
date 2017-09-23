@@ -3,6 +3,7 @@ using Microsoft.Extensions.Configuration;
 using System;
 using System.IO;
 using System.Net;
+using System.Reflection;
 using System.Threading.Tasks;
 using Xunit;
 
@@ -14,8 +15,11 @@ namespace Fiver.Asp.Docker.Tests
 
         public MoviesControllerIntegration()
         {
+            var basePath = Directory.GetCurrentDirectory()
+                                    .Split("bin")[0];
+
             var builder = new ConfigurationBuilder()
-                                .SetBasePath(Directory.GetCurrentDirectory())
+                                .SetBasePath(basePath)   
                                 .AddJsonFile("appsettings.json", optional: true)
                                 .AddJsonFile($"appsettings.Development.json", optional: true)
                                 .AddEnvironmentVariables();

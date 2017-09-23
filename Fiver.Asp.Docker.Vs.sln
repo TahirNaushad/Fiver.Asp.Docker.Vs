@@ -15,10 +15,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docker", "docker", "{C61B88
 		.env = .env
 		docker-compose.yml = docker-compose.yml
 		Dockerfile_api = Dockerfile_api
+		Dockerfile_tests = Dockerfile_tests
 		Dockerfile_web = Dockerfile_web
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fiver.Asp.Docker.Tests", "Fiver.Asp.Docker.Tests\Fiver.Asp.Docker.Tests.csproj", "{FD7CC495-2246-40C8-9598-CF1FDE6DC99E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fiver.Asp.Docker.Tests", "Fiver.Asp.Docker.Tests\Fiver.Asp.Docker.Tests.csproj", "{FD7CC495-2246-40C8-9598-CF1FDE6DC99E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

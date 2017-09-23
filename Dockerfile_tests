@@ -1,0 +1,12 @@
+FROM microsoft/dotnet:2-sdk
+ENV Api_Url=
+
+WORKDIR /src
+
+#   Copy only .csproj and restore
+COPY ./Fiver.Asp.Docker.Tests/Fiver.Asp.Docker.Tests.csproj ./Fiver.Asp.Docker.Tests/
+RUN dotnet restore ./Fiver.Asp.Docker.Tests/
+
+#   Copy everything else and build
+COPY ./Fiver.Asp.Docker.Tests/ ./Fiver.Asp.Docker.Tests/
+RUN dotnet build ./Fiver.Asp.Docker.Tests/
