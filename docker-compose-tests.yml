@@ -2,7 +2,7 @@ version: '3.3'
 
 services:
   api:
-    image: naushadt25/api:ci-4
+    image: naushadt25/api:ci-${API_BUILD_NUMBER}
     # ports:
     #   - "8080:80"
     environment:
@@ -11,8 +11,9 @@ services:
     build:
       context: .
       dockerfile: Dockerfile_tests
-    image: fiver.asp.docker.tests
+    image: naushadt25/tests:ci-${BUILD_NUMBER}
     environment:
       - "Api_Url=http://api/movies"
+      - TEAMCITY_PROJECT_NAME
     depends_on:
       - api
