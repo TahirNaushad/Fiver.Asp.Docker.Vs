@@ -10,3 +10,6 @@ RUN dotnet restore ./Fiver.Asp.Docker.Tests/
 #   Copy everything else and build
 COPY ./Fiver.Asp.Docker.Tests/ ./Fiver.Asp.Docker.Tests/
 RUN dotnet build ./Fiver.Asp.Docker.Tests/
+
+WORKDIR /src/Fiver.Asp.Docker.Tests
+ENTRYPOINT ["dotnet", "test"]
