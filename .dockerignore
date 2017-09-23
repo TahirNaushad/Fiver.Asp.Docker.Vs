@@ -9,3 +9,4 @@
 **/launchSettings.json
 **/node_modules/
 **/appsettings.Development.json
+**/.env

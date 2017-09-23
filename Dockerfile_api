@@ -1,9 +1,22 @@
 # Build Stage
 FROM microsoft/aspnetcore-build AS build-env
 WORKDIR /src
-COPY . .
-RUN dotnet restore
-RUN dotnet build
+
+#   Copy only .csproj and restore
+COPY ./Fiver.Asp.Docker.Data/Fiver.Asp.Docker.Data.csproj ./Fiver.Asp.Docker.Data/
+RUN dotnet restore ./Fiver.Asp.Docker.Data/
+
+COPY ./Fiver.Asp.Docker.Api/Fiver.Asp.Docker.Api.csproj ./Fiver.Asp.Docker.Api/
+RUN dotnet restore ./Fiver.Asp.Docker.Api/
+
+#   Copy everything else and build
+COPY ./Fiver.Asp.Docker.Data/ ./Fiver.Asp.Docker.Data/
+RUN dotnet build ./Fiver.Asp.Docker.Data/
+
+COPY ./Fiver.Asp.Docker.Api/ ./Fiver.Asp.Docker.Api/
+RUN dotnet build ./Fiver.Asp.Docker.Api/
+
+#   publish
 RUN dotnet publish ./Fiver.Asp.Docker.Api/ -o /publish --configuration Release
 
 # Publish Stage
