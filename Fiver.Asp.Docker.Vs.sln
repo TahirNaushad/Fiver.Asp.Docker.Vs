@@ -18,6 +18,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docker", "docker", "{C61B88
 		Dockerfile_web = Dockerfile_web
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fiver.Asp.Docker.Tests", "Fiver.Asp.Docker.Tests\Fiver.Asp.Docker.Tests.csproj", "{FD7CC495-2246-40C8-9598-CF1FDE6DC99E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,6 +38,10 @@ Global
 		{00D9A25C-9B96-4E6C-A7A0-D5A48992EDD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{00D9A25C-9B96-4E6C-A7A0-D5A48992EDD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{00D9A25C-9B96-4E6C-A7A0-D5A48992EDD8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD7CC495-2246-40C8-9598-CF1FDE6DC99E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD7CC495-2246-40C8-9598-CF1FDE6DC99E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD7CC495-2246-40C8-9598-CF1FDE6DC99E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD7CC495-2246-40C8-9598-CF1FDE6DC99E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
