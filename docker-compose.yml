@@ -21,3 +21,5 @@ services:
       - "8090:80"
     environment:
       - "Api_Url=http://api/movies"
+    depends_on:
+      - api
