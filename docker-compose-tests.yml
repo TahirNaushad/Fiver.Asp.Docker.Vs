@@ -3,17 +3,15 @@ version: '3.3'
 services:
   api:
     image: naushadt25/api:ci-${API_BUILD_NUMBER}
-    # ports:
-    #   - "8080:80"
     environment:
-      - "ConnectionStrings:DefaultConnection=Server=tcp:fiver.database.windows.net,1433;Initial Catalog=movies;Persist Security Info=False;User ID=fiver;Password=Movies123;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
+      - "MOVIES_DB_CONN=Server=tcp:fiver.database.windows.net,1433;Initial Catalog=movies;Persist Security Info=False;User ID=fiver;Password=Movies123;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
   tests:
     build:
       context: .
       dockerfile: Dockerfile_tests
     image: naushadt25/tests:ci-${BUILD_NUMBER}
     environment:
-      - "Api_Url=http://api/movies"
+      - "API_URL=http://api/movies"
       - TEAMCITY_PROJECT_NAME
     depends_on:
       - api

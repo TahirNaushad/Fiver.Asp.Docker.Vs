@@ -12,7 +12,7 @@ namespace Fiver.Asp.Docker.Web.Pages.Movies
 
         public async Task<IActionResult> OnGetAsync(int id)
         {
-            var baseUri = Startup.Configuration["Api_Url"];
+            var baseUri = Startup.Configuration["API_URL"];
             var requestUri = $"{baseUri}/{id}";
             var response = await HttpRequestFactory.Get(requestUri);
 
@@ -35,7 +35,7 @@ namespace Fiver.Asp.Docker.Web.Pages.Movies
             if (!ModelState.IsValid)
                 return Page();
 
-            var baseUri = Startup.Configuration["Api_Url"];
+            var baseUri = Startup.Configuration["API_URL"];
             var requestUri = $"{baseUri}/{this.Movie.Id}";
             var response = await HttpRequestFactory.Put(requestUri, this.Movie);
             

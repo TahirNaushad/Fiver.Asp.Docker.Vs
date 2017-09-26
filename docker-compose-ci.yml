@@ -3,15 +3,13 @@ version: '3.3'
 services:
   api:
     image: naushadt25/api:ci-4
-    # ports:
-    #   - "8084:80"
     environment:
-      - "ConnectionStrings:DefaultConnection=Server=tcp:fiver.database.windows.net,1433;Initial Catalog=movies;Persist Security Info=False;User ID=${USER_ID};Password=${PASSWORD};MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
+      - "MOVIES_DB_CONN=Server=tcp:fiver.database.windows.net,1433;Initial Catalog=movies;Persist Security Info=False;User ID=${USER_ID};Password=${PASSWORD};MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
   web:
     image: naushadt25/web:ci-4
     ports:
       - "8094:80"
     environment:
-      - "Api_Url=http://api/movies"
+      - "API_URL=http://api/movies"
     depends_on:
       - api

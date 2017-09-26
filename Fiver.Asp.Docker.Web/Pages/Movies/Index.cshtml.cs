@@ -11,7 +11,7 @@ namespace Fiver.Asp.Docker.Web.Pages.Movies
 
         public async Task OnGetAsync()
         {
-            var baseUri = Startup.Configuration["Api_Url"];
+            var baseUri = Startup.Configuration["API_URL"];
             var requestUri = $"{baseUri}";
             var response = await HttpRequestFactory.Get(requestUri);
             this.Movies = response.ContentAsType<List<MovieOutputModel>>();

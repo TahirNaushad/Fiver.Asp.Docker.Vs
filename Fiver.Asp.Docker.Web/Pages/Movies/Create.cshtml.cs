@@ -20,7 +20,7 @@ namespace Fiver.Asp.Docker.Web.Pages.Movies
             if (!ModelState.IsValid)
                 return Page();
 
-            var baseUri = Startup.Configuration["Api_Url"];
+            var baseUri = Startup.Configuration["API_URL"];
             var requestUri = $"{baseUri}";
             var response = await HttpRequestFactory.Post(requestUri, this.Movie);
 

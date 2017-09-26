@@ -19,7 +19,7 @@ namespace Fiver.Asp.Docker.Api
         public void ConfigureServices(
             IServiceCollection services)
         {
-            var connection = this.configuration.GetConnectionString("DefaultConnection");
+            var connection = this.configuration["MOVIES_DB_CONN"];
 
             services.AddDbContext<Database>(options =>
                         options.UseSqlServer(connection));
