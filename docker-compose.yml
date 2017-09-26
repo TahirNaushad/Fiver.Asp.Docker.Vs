@@ -5,7 +5,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile_api
-    image: fiver.asp.docker.api
+    image: naushadt25/api
     ports:
       - "8080:80"
     environment:
@@ -14,7 +14,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile_web
-    image: fiver.asp.docker.web
+    image: naushadt25/web
     ports:
       - "8090:80"
     environment:
